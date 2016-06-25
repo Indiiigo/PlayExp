@@ -38,7 +38,7 @@ class scrape():
 				tag2 = soup.find_all('div', class_="single-review")
 				#tag3 = 
 				driver.close()
-				filename = "/../data/data.txt"
+				filename = "/../data/"+url[-6:]+".txt"
 				f = open(filename, 'w')
 				f.write(content.encode('utf-8'))
 				f.close()
